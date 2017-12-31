@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Resume site for Pat Conrey",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
+    "watch-scss": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Pat Conrey",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-sass": "^3.3.7",
+    "express": "^4.15.2",
+    "jquery": "^3.2.1",
+    "node-sass": "^4.6.0"
+  }
+}
