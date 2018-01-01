@@ -100,6 +100,15 @@ body {
     transition: 0.3s; }
     body .main-display img:hover {
       transform: scale(1.05); }
+  body .icon-container img {
+    width: 100%;
+    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    transition: 0.1s all ease-in; }
+    body .icon-container img:hover {
+      transform: scale(1.05); }
   body #mosy {
     background: #5d2fa3;
     /* Old browsers */
@@ -171,6 +180,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left bottom; }
+  body #resume {
+    background: #5f6070;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #5f6070 0%, #202233 99%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #5f6070 0%, #202233 99%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #5f6070 0%, #202233 99%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f6070', endColorstr='#202233',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
 
 /*==========  Mobile First Method  ==========*/
 @media only screen and (max-width: 850px) {
