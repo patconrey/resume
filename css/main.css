@@ -1,5 +1,5 @@
 @import url(../node_modules/bootstrap/dist/css/bootstrap.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:100, 300, 400");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100, 300, 300i, 400");
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
@@ -14,6 +14,9 @@ body {
   body h1 {
     font-size: 2em;
     font-weight: 400; }
+  body .container-fluid {
+    padding-left: 0;
+    padding-right: 0; }
   body button {
     background-color: #34c868;
     font-weight: 400;
@@ -23,14 +26,30 @@ body {
     padding-bottom: 0.8em;
     border-radius: 0.5em;
     text-transform: uppercase;
-    outline-style: none;
     outline: none;
     border: none;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
     transition: 0.3s; }
+    body button.btn-soft {
+      background-color: transparent;
+      border: 1px solid white;
+      -moz-outline-radius: 0.5em;
+      letter-spacing: 0.25em;
+      margin-top: 50px;
+      font-size: 0.8em;
+      color: white;
+      box-shadow: none; }
+      body button.btn-soft:hover {
+        background-color: white;
+        color: grey; }
     body button:hover {
       transform: translateY(-2.5px);
       background-color: #3ee378; }
+  body .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; }
   body .section {
     min-height: 100vh;
     padding-left: 150px;
@@ -56,6 +75,15 @@ body {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+    body .section.about-me {
+      background-color: white;
+      color: rgba(25, 25, 25, 0.77); }
+      body .section.about-me h1 {
+        color: rgba(18, 18, 18, 0.77); }
+      body .section.about-me a {
+        color: rgba(25, 25, 25, 0.77); }
+  body em {
+    font-style: italic; }
   body .fade-lowlight {
     height: 100vh;
     background: -moz-linear-gradient(left, transparent 1%, black 100%);
@@ -68,7 +96,10 @@ body {
     /* IE6-9 */ }
   body .main-display img {
     width: 100%;
-    align-content: center; }
+    align-content: center;
+    transition: 0.3s; }
+    body .main-display img:hover {
+      transform: scale(1.05); }
   body #mosy {
     background: #5d2fa3;
     /* Old browsers */
@@ -140,15 +171,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left bottom; }
-  body #about-me {
-    background: url(../assets/me-home-2.jpg) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: left bottom; }
 
 /*==========  Mobile First Method  ==========*/
 @media only screen and (max-width: 850px) {
@@ -158,6 +180,11 @@ body {
     padding-top: 25px;
     padding-bottom: 25px; } }
 
+@media only screen and (max-width: 990px) {
+  .row.description {
+    display: block;
+    /* Turn off the flexible box layout */ } }
+
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
   body {
     font-size: 50px; }
@@ -165,4 +192,6 @@ body {
       padding-left: 50px;
       padding-right: 50px;
       padding-top: 50px;
-      padding-bottom: 50px; } }
+      padding-bottom: 50px; }
+      body .section button.btn-soft {
+        border: 4px solid white; } }

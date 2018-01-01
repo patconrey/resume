@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Pat Conrey</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 </head>
 <body>
 
@@ -30,129 +31,123 @@
         </div>
     </div>
 
-    <div class="section" id="about-me">
+    <div class="section about-me" id="about-me">
         <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12"></div>
             <div class="col-lg-7 col-md-7 col-sm-12">
                 <h1>About Me</h1>
                 <p>I'm a student at the University of Kentucky. I'm in my fourth year pursuing two degrees in
                     Electrical Engineering and Mathematics. I've been designing since I was 15 or so and I only recently
-                    got into programming (see <a href="#scene">below</a>). Math is my favorite thing in the world with a
-                    particular bias towards analysis and topology.
+                    got into programming (see <a href="#scene">below</a>). Math is my favorite thing in the world, and I'm
+                    a huge fan of emojis.
                 </p>
-
                 <p>I mainly focus on iOS development with Swift, though I'm more than familiar with PHP,
                 Node, and front end web languages like HTML, SCSS, and JavaScript. In fact, I wrote this website
-                from scratch and it uses an elementary mix of SCSS for styling, Node for serving, semantic and accessible HTML,
-                    jQuery because #jQuery, and Bootstrap for its grid.</p>
+                from scratch and it uses an elementary mix of SCSS for styling, Node for serving, semantic and accessible
+                    HTML, jQuery because #jQuery, and Bootstrap for its grid.</p>
+
             </div>
         </div>
     </div>
 
     <!-- MOSY -->
     <div class="section" id="mosy">
-        <div class="row">
+        <div class="row description">
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img src="assets/mosy-overview-sm.png"/>
+                <img data-aos="zoom-out" src="assets/mosy-overview-sm.png"/>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
-                <div class="description">
                 <h1>Mosy</h1>
                 <p>Mosy was a blast to program. It started with a personal challenge:
-                how fast can I develop a robust chat application? Using Firebase for authentication
-                and data storage was huge help. The design was largely inspired by Google's Material
-                paradigm.</p>
-
-                </div>
+                    how fast can I develop a robust chat application? Using <a href="https://firebase.google.com/" target="_blank">Firebase</a>
+                    for authentication and data storage was a huge help, and <a href="https://onesignal.com/" target="_blank">OneSignal</a>
+                    beautifully handled push notifications. The design was largely inspired by Google's Material paradigm.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row description">
             <div class="col-lg-5 col-md-5 col-sm-12">
-                <p>Now, this is a paragraph all about how
-                    My life got flipped-turned upside down
-                    And I'd like to take a minute
-                    Just sit right there
-                    I'll tell you how I became the prince of a town called Bel Air
-                    In west Philadelphia born and raised
-                    On the playground was where I spent most of my days </p>
+                <p>This app is fairly straightforward. Users can create an account with their email and a password with
+                some other information, e.g., profile picture, birthday, etc. Users can search for others and start conversations,
+                lock certain conversations so somebody would need a password to view the conversation, send images, videos,
+                update their password and email, save videos and images and later view them in their gallery through custom
+                media players.</p>
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
                 <img src="assets/mosy-ipad-sm.png"/>
+            </div>
+        </div>
+        <div class="row description">
+            <div class="col-lg-7 col-md-7 col-sm-12 main-display">
+                <img data-aos="fade-right"
+                     data-aos-offset="300"
+                     data-aos-easing="ease-in-sine" src="assets/mosy-sm.png"/>
+            </div>
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <p>All of the previously described features are built, but there's still work to do before I put it on
+                the App Store. I'd like to run a few UX tests on the account creation process and make some narrative based
+                onboarding screens.</p>
+                <br>
+                <span class="git-icon"></span><em>Access to the GitHub repo is available upon request.</em>
+                <br>
+                <button class="btn-soft">CONTACT</button>
             </div>
         </div>
     </div>
 
     <!-- IMAGE EDITOR -->
     <div class="section" id="image-editor">
-        <div class="row">
+        <div class="row description">
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>Image Editor</h1>
-                <p>Now, this is a paragraph all about how
-                    My life got flipped-turned upside down
-                    And I'd like to take a minute
-                    Just sit right there
-                    I'll tell you how I became the prince of a town called Bel Air
-                    In west Philadelphia born and raised
-                    On the playground was where I spent most of my days </p>
-
-                <p> Chillin' out maxin' relaxin' all cool
-                    And all shootin some b-ball outside of the school
-                    When a couple of guys who were up to no good
-                    Started making trouble in my neighborhood
-                    I got in one little fight and my mom got scared
-                    She said 'You're movin' with your auntie and uncle in Bel Air'</p>
+                <p>This app really shows my creativity with naming projects...</p>
+                <p>Still a work in progress, this filter-adding application will intelligently suggest custom filters
+                to users based on the image they'd like to edit. For example, an image with people should have different
+                filters than an image of the grand canyon.</p>
+                <p>I learned all about Core Image and some of the new Vision API and CoreML.</p>
+                <br>
+                <span class="git-icon"></span><em>Access to the GitHub repo is available upon request.</em>
+                <br>
+                <button class="btn-soft">CONTACT</button>
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img src="assets/image-editor-sm.png"/>
+                <img data-aos="zoom-out" src="assets/image-editor-sm.png"/>
             </div>
         </div>
     </div>
 
     <!-- Music Player -->
     <div class="section" id="music">
-        <div class="row">
+        <div class="row description">
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img src="assets/music-sm.png"/>
+                <img data-aos="fade-up" src="assets/music-sm.png"/>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>Juke</h1>
-                <p>Now, this is a paragraph all about how
-                    My life got flipped-turned upside down
-                    And I'd like to take a minute
-                    Just sit right there
-                    I'll tell you how I became the prince of a town called Bel Air
-                    In west Philadelphia born and raised
-                    On the playground was where I spent most of my days </p>
-
-                <p> Chillin' out maxin' relaxin' all cool
-                    And all shootin some b-ball outside of the school
-                    When a couple of guys who were up to no good
-                    Started making trouble in my neighborhood
-                    I got in one little fight and my mom got scared
-                    She said 'You're movin' with your auntie and uncle in Bel Air'</p>
+                <p>Juke was a fun, small project I made for a friend. She didn't listen to music too much since she liked
+                CDs and she was rarely in her car. I got the idea for a music player interface that prominently displays
+                    a spinning CD of the album art for the song that's playing.</p>
+                <p>This app isn't connected to the internet in any way and just came with a preloaded playlist of songs.
+                The code isn't hosted on my GitHub, but if you're interested please feel free to reach out!</p>
+                <p>The songs in the mockup are The Revivalists' "Soul Fight" and Travis Scott's "coordinate,"
+                gratefully used here without intent of copyright infringement.</p>
             </div>
         </div>
     </div>
 
     <!-- Cipi -->
     <div class="section" id="cipi">
-        <div class="row">
+        <div class="row description">
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>Cipi</h1>
-                <p>Now, this is a paragraph all about how
-                    My life got flipped-turned upside down
-                    And I'd like to take a minute
-                    Just sit right there
-                    I'll tell you how I became the prince of a town called Bel Air
-                    In west Philadelphia born and raised
-                    On the playground was where I spent most of my days </p>
-
-                <p> Chillin' out maxin' relaxin' all cool
-                    And all shootin some b-ball outside of the school
-                    When a couple of guys who were up to no good
-                    Started making trouble in my neighborhood
-                    I got in one little fight and my mom got scared
-                    She said 'You're movin' with your auntie and uncle in Bel Air'</p>
+                <p>Are you bad at keeping in touch with people? Me too. I made this app to help
+                you, and me, and everybody else.</p>
+                <p>Cipi will cycle through your contacts and you can set reminders to text the people that pop up. Hope
+                you get back in touch with some friends :)</p>
+                <p>Again, I drew on Google's Material for the design and threw in some personal touches.</p>
+                <br>
+                <span class="git-icon"></span><em>Access to the GitHub repo is available upon request.</em>
+                <br>
+                <button class="btn-soft">CONTACT</button>
             </div>
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
                 <img src="assets/cipi-sm.png"/>
@@ -162,7 +157,7 @@
 
     <!-- Scene -->
     <div class="section" id="scene">
-        <div class="row">
+        <div class="row description">
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
                 <img src="assets/scene-sm.png"/>
             </div>
@@ -188,17 +183,32 @@
 
 </div>
 
+<script src="node_modules/aos/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
+
+    AOS.init({
+        disable: 'mobile'
+    });
 
     var emojis = [0x1F44B, 0x1F91D, 0x1F680, 0x1F450, 0x2615, 0x1F64F, 0x1F91D];
     var i = 0;
 
     $(document).ready(function() {
 
+        // Populate github emojis
+        $(".git-icon").text(String.fromCodePoint(0x1F50D) + " ");
+
+        // On hover, make git icon be a smiling face.
+        $(".btn-soft").mouseenter(function() {
+            $(".git-icon").text(String.fromCodePoint(0x1F60A) + " ");
+        });
+        $(".btn-soft").mouseleave(function() {
+            $(".git-icon").text(String.fromCodePoint(0x1F50D) + " ");
+        });
+
         // Add initial handshake emoji on document load.
         $("#welcome-emoji").text(String.fromCodePoint(0x1F91D));
-
 
         // Cycle through emojis upon hovering over the "Say Hello" button
         $("#say-hello-button").mouseenter(function() {
