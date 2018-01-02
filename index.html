@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pat Conrey</title>
+    <title>Pat Conrey Portfolio</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 </head>
@@ -11,7 +11,7 @@
 
 <div class="container-fluid">
 
-    <!-- HOME -->
+    <!-- Home -->
     <div class="section" id="home">
         <div class="row">
             <div class="col-lg-5 col-md-5 col-sm-12"></div>
@@ -19,134 +19,148 @@
                 <h1><span id="welcome-emoji"></span> Hey!</h1>
                 <p>
                     I'm an iOS developer, designer, and emoji enthusiast.
-                    Welcome to my resume. If you want to reach out,
+                    Welcome to my portfolio. If you want to reach out,
                     please click below.
                 </p>
                 <p>
                     Best, <br/>Pat Conrey.
                 </p>
                 <br>
-                <button id="say-hello-button">Say Hello</button>
+                <button aria-label="Contact" id="say-hello-button">Say Hello</button>
             </div>
         </div>
     </div>
 
+    <!-- About Me -->
     <div class="section about-me" id="about-me">
         <div class="row description">
+            <!-- Text -->
             <div class="col-lg-7 col-md-7 col-sm-12">
                 <h1>About Me</h1>
-                <p>I'm a student at the University of Kentucky. I'm in my fourth year pursuing two degrees in
-                    Electrical Engineering and Mathematics. I've been designing since I was 15 or so and I only recently
-                    got into programming (see <a id="scene-link" href="#scene">below</a>). Math is my favorite thing in the world, and I'm
-                    a huge fan of emojis.
+                <p>I'm a student at the University of Kentucky in my fourth year pursuing two degrees in Electrical
+                    Engineering and Mathematics. I've been designing since I was 15 and I only recently got into
+                    programming (see <a id="scene-link" href="#scene">below</a>). Math is my favorite subject, and I'm a huge fan of emojis.
                 </p>
-                <p>I mainly focus on iOS development with Swift, though I'm more than familiar with PHP,
-                Node, and front end web languages like HTML, SCSS, and JavaScript. In fact, I wrote this website
-                from scratch and it uses an elementary mix of SCSS for styling, Node for serving, semantic and accessible
-                    HTML, jQuery because #jQuery, and Bootstrap for its grid.</p>
-
+                <p>I mainly focus on iOS development, though I've worked in PHP and the Symfony framework,
+                Node, and front end web languages like HTML, SCSS, and JavaScript. I hardly know anything about Android
+                development but I'm in the process of learning React Native -- wish me luck!
+                </p>
+                <p> Below, you'll find some side projects I'm proud of. I designed all the interfaces from scratch and then
+                    built the applications using Swift 3 and 4. If you want to check out the code for any of the projects,
+                    let me know and I can give you access to the GitHub repos.
+                </p>
             </div>
+            <!-- Icon Descriptors -->
             <div class="col-lg-5 col-md-5 col-sm-12 icon-container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/ai.png"/>
+                        <img alt="adobe illustrator" src="assets/icons/ai.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/bootstrap.png"/>
+                        <img alt="bootstrap css" src="assets/icons/bootstrap.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/css.png"/>
+                        <img alt="css 3" src="assets/icons/css.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/firebase.png"/>
+                        <img alt="firebase" src="assets/icons/firebase.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/html.png"/>
+                        <img alt="html 5" src="assets/icons/html.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/jq.png"/>
+                        <img alt="j query" src="assets/icons/jq.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/js.png"/>
+                        <img alt="javascript" src="assets/icons/js.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/node.png"/>
+                        <img alt="node js" src="assets/icons/node.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/php.png"/>
+                        <img alt="php" src="assets/icons/php.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/ps.png"/>
+                        <img alt="photoshop" src="assets/icons/ps.png"/>
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-2 col-xs-3">
-                        <img src="assets/icons/swift.png"/>
+                        <img alt="swift" src="assets/icons/swift.png"/>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- MOSY -->
+    <!-- Mosy -->
     <div class="section" id="mosy">
         <div class="row description">
+            <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img data-aos="zoom-out" src="assets/mosy-overview-sm.png"/>
+                <img alt="" data-aos="zoom-out" src="assets/mosy-overview-sm.png"/>
             </div>
+            <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>Mosy</h1>
-                <p>Mosy was a blast to program. It started with a personal challenge:
-                    how fast can I develop a robust chat application? Using <a href="https://firebase.google.com/" target="_blank">Firebase</a>
-                    for authentication and data storage was a huge help, and <a href="https://onesignal.com/" target="_blank">OneSignal</a>
-                    beautifully handled push notifications. The design was largely inspired by Google's Material paradigm.</p>
-            </div>
-        </div>
-        <div class="row description">
-            <div class="col-lg-5 col-md-5 col-sm-12">
                 <p>This app is fairly straightforward. Users can create an account with their email and a password with
-                some other information, e.g., profile picture, birthday, etc. Users can search for others and start conversations,
-                lock certain conversations so somebody would need a password to view the conversation, send images, videos,
-                update their password and email, save videos and images and later view them in their gallery through custom
-                media players.</p>
-            </div>
-            <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img src="assets/mosy-ipad-sm.png"/>
+                    some other information, e.g., profile picture, birthday, etc. Users can search for others and start conversations,
+                    lock certain conversations so somebody would need a password to view the conversation, send images, videos,
+                    update their password and email, save videos and images and later view them in their gallery through custom
+                    media players.</p>
             </div>
         </div>
         <div class="row description">
+            <!-- Text Descriptor -->
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <p>Mosy was a blast to program. It started with a personal challenge: how fast can I develop a robust
+                    chat application? <a href="https://firebase.google.com/" target="_blank">Firebase</a> was a huge
+                    help, and <a href="https://onesignal.com/" target="_blank">OneSignal</a> beautifully handled push
+                    notifications. The design was largely inspired by Google's Material paradigm and purple, my favorite color.</p>
+            </div>
+            <!-- Image Descriptor -->
+            <div class="col-lg-7 col-md-7 col-sm-12 main-display">
+                <img alt="" src="assets/mosy-ipad-sm.png"/>
+            </div>
+        </div>
+        <div class="row description">
+            <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
                 <img data-aos="fade-right"
                      data-aos-offset="300"
-                     data-aos-easing="ease-in-sine" src="assets/mosy-sm.png"/>
+                     data-aos-easing="ease-in-sine" alt="" src="assets/mosy-sm.png"/>
             </div>
+            <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <p>All of the previously described features are built, but there's still work to do before I put it on
-                the App Store. I'd like to run a few UX tests on the account creation process and make some narrative based
-                onboarding screens.</p>
+                the App Store. It seems that there's a new chat application everyday. I want to convert the underlying network calls to utilize a mesh network for localized communication. This would be useful if, for example, you're on a trip with your friends and don't want to use up data.</p>
                 <br>
                 <span class="git-icon"></span><em>Access to the GitHub repo is available upon request.</em>
                 <br>
-                <button class="btn-soft">CONTACT</button>
+                <br>
+                <a href="#contact" class="btn-link btn-soft">Contact</a>
             </div>
         </div>
     </div>
 
-    <!-- IMAGE EDITOR -->
+    <!-- Image Editor -->
     <div class="section" id="image-editor">
         <div class="row description">
+            <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>Image Editor</h1>
                 <p>This app really shows my creativity with naming projects...</p>
                 <p>Still a work in progress, this filter-adding application will intelligently suggest custom filters
                 to users based on the image they'd like to edit. For example, an image with people should have different
                 filters than an image of the grand canyon.</p>
-                <p>I learned all about Core Image and some of the new Vision API and CoreML.</p>
+                <p>By developing this, I learned about the Core Image SDK to create filters and the new Vision API with CoreML to recognize faces and objects.</p>
                 <br>
                 <span class="git-icon"></span><em>Access to the GitHub repo is available upon request.</em>
                 <br>
-                <button class="btn-soft">CONTACT</button>
+                <br>
+                <a href="#contact" class="btn-link btn-soft">Contact</a>
             </div>
+            <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img data-aos="zoom-out" src="assets/image-editor-sm.png"/>
+                <img alt="" data-aos="zoom-out" src="assets/image-editor-sm.png"/>
             </div>
         </div>
     </div>
@@ -154,18 +168,20 @@
     <!-- Music Player -->
     <div class="section" id="music">
         <div class="row description">
+            <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img data-aos="fade-up" src="assets/music-sm.png"/>
+                <img alt="" data-aos="fade-up" src="assets/music-sm.png"/>
             </div>
+            <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>Juke</h1>
-                <p>Juke was a fun, small project I made for a friend. She didn't listen to music too much since she liked
-                CDs and she was rarely in her car. I got the idea for a music player interface that prominently displays
-                    a spinning CD of the album art for the song that's playing.</p>
-                <p>This app isn't connected to the internet in any way and just came with a preloaded playlist of songs.
+                <p>Juke was a fun, small project I made for a friend: she didn't listen to music too much since she liked
+                CDs and was rarely in her car. I got the idea for a music player interface that prominently displays
+                    a spinning CD of the album art for the current song.</p>
+                <p>This app isn't connected to the internet or a streaming service. It would just come with a preloaded playlist of songs.
                 The code isn't hosted on my GitHub, but if you're interested please feel free to reach out!</p>
                 <p>The songs in the mockup are The Revivalists' "Soul Fight" and Travis Scott's "coordinate,"
-                gratefully used here without intent of copyright infringement.</p>
+                gratefully used here without the intent of copyright infringement.</p>
             </div>
         </div>
     </div>
@@ -173,6 +189,7 @@
     <!-- Cipi -->
     <div class="section" id="cipi">
         <div class="row description">
+            <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>Cipi</h1>
                 <p>Are you bad at keeping in touch with people? Me too. I made this app to help
@@ -183,10 +200,12 @@
                 <br>
                 <span class="git-icon"></span><em>Access to the GitHub repo is available upon request.</em>
                 <br>
-                <button class="btn-soft">CONTACT</button>
+                <br>
+                <a href="#contact" class="btn-link btn-soft">Contact</a>
             </div>
+            <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img src="assets/cipi-sm.png"/>
+                <img alt="" src="assets/cipi-sm.png"/>
             </div>
         </div>
     </div>
@@ -194,25 +213,38 @@
     <!-- Scene -->
     <div class="section" id="scene">
         <div class="row description">
+            <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img src="assets/scene-sm.png"/>
+                <img alt="" src="assets/scene-2-sm.png"/>
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>Scene</h1>
-                <p>Now, this is a paragraph all about how
-                    My life got flipped-turned upside down
-                    And I'd like to take a minute
-                    Just sit right there
-                    I'll tell you how I became the prince of a town called Bel Air
-                    In west Philadelphia born and raised
-                    On the playground was where I spent most of my days </p>
-
-                <p> Chillin' out maxin' relaxin' all cool
-                    And all shootin some b-ball outside of the school
-                    When a couple of guys who were up to no good
-                    Started making trouble in my neighborhood
-                    I got in one little fight and my mom got scared
-                    She said 'You're movin' with your auntie and uncle in Bel Air'</p>
+                <p>Scene was a social app that lets users in a given city log on and see what was
+                    happening around them. They could like and comment on scenes (the name we assigned to event listings).
+                    We provided authentication through email, Facebook, and anonymous users. The entire app was built on
+                    Firebase and we handled push notifications with OneSignal. Scene was my first dive into programming
+                    beyond the python and C++ encountered in the standard Electrical Engineering curriculum. I
+                    learned Swift through countless hours of Youtube videos, reading
+                    Apple's documentation, and Stack Overflow. It was an ... experience ... to say the least. </p>
+            </div>
+        </div>
+        <div class="row description">
+            <!-- Text Descriptor -->
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <p>My friend came up with the idea in our sophomore year of college. I designed all the interfaces over
+                    the next few months and we began scouting for a mobile developer. None of them worked out, so I
+                    reluctantly decided to program it myself. Before I started learning the language, I sent screenshots of the
+                    UI to my friend in Silicon Valley -- the only developer I knew. His advice was simple: "That's
+                    ambitious. But doable, definitely doable!" Enduring
+                    innumerable crashes, failed features, bad designs, tons of revisions, and full course loads for two
+                    degrees, I launched Scene on the App Store in April of 2017.</p>
+                <p>What started with a simple idea launched me on a pretty awesome journey. Through it, I learned the basics
+                of iOS development, team management, planning, and even talked to angel investors. Since April 2017, I've developed
+                and designed all of the projects you see on this site.</p>
+            </div>
+            <!-- Image Descriptor -->
+            <div class="col-lg-7 col-md-7 col-sm-12 main-display">
+                <img alt="" src="assets/scene-sm.png"/>
             </div>
         </div>
     </div>
@@ -220,31 +252,52 @@
     <!-- Resume -->
     <div class="section" id="resume">
         <div class="row description">
+            <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img src="assets/resume-sm.png"/>
+                <img alt="" src="assets/resume-sm.png"/>
             </div>
+            <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>This Site</h1>
-                <p>I'm not too good at web development but I'm very happy with the way this site turned out. I hope you
-                liked it too! If you have any feedback at all, I'd love to hear from you. Please reach out!</p>
+                <p>This site uses an elementary mix of SCSS for styling, Node for serving, semantic and accessible HTML,
+                    jQuery because #jQuery, and Bootstrap for its grid. Although I'm not too familiar with web development, I'm very
+                    happy with the way this site turned out. I hope you like it too! If you have any feedback at all,
+                    I'd love to hear from you. Please reach out!</p>
                 <br>
-                <button class="btn-soft">CONTACT</button>
+                <a href="#contact" class="btn-link btn-soft">Contact</a>
             </div>
         </div>
     </div>
 
+    <!-- Contact -->
+    <div class="section contact" id="contact">
+        <div class="row description">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <h1>Contact Me</h1>
+                <p>If you'd like to get in touch, feel free to email me at patrickconrey@gmail.com. Alternatively, you can reach me
+                    on twitter at @PatConrey. If you live in the wizarding world, your owl already knows how to find me 🦉. I'm
+                    looking forward to your email, tweet, or parchment.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="panel-footer description">
+        <p id="footer-text">Made by @PatConrey with<span id="footer-emoji" style="font-size: 1.3em; margin: 0.3em;">❤️</span>in 2018.</p>
+    </footer>
+
 </div>
 
+<!-- AOS & jQuery Source -->
 <script src="node_modules/aos/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
 
-    AOS.init({
-        disable: 'mobile'
-    });
-
     var emojis = [0x1F44B, 0x1F91D, 0x1F680, 0x1F450, 0x2615, 0x1F64F, 0x1F91D];
     var i = 0;
+
+    var footerEmojis = [0x1F49C, 0x2615, 0x1F680, 0x1F95E, 0x1F4BB];
+    var j = 1;
 
     $(document).ready(function() {
 
@@ -257,6 +310,14 @@
         });
         $(".btn-soft").mouseleave(function() {
             $(".git-icon").text(String.fromCodePoint(0x1F50D) + " ");
+        });
+
+        // Populate footer emojis
+        $("#footer-emoji").text(String.fromCodePoint(0x1F49C));
+        $("#footer-emoji").mouseenter(function() {
+            console.log("yo");
+            $("#footer-emoji").text(String.fromCodePoint(footerEmojis[j % (footerEmojis.length)]));
+            j += 1;
         });
 
         // Add initial handshake emoji on document load.
@@ -290,6 +351,10 @@
             } // End if
         });
 
+    });
+
+    AOS.init({
+        disable: 'mobile'
     });
 
 </script>
