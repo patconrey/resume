@@ -137,6 +137,9 @@ body {
       }
       a {
         color: rgba(25,25,25,0.77);
+        &:hover {
+          color: $light-green;
+        }
       }
     }
     &.contact {

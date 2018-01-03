@@ -114,6 +114,8 @@ body {
         color: rgba(18, 18, 18, 0.77); }
       body .section.about-me a {
         color: rgba(25, 25, 25, 0.77); }
+        body .section.about-me a:hover {
+          color: #34c868; }
     body .section.contact {
       min-height: 50vh;
       font-weight: 400;
