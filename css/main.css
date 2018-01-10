@@ -147,10 +147,25 @@ body {
     border-radius: 50%;
     margin-top: 25px;
     margin-bottom: 25px;
-    transition: 0.1s all ease-in; }
+    transition: 0.1s all ease-in;
+    text-align: center; }
     body .icon-container img:hover {
       box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
       transform: scale(1.05); }
+    body .icon-container img:hover ~ span {
+      visibility: visible;
+      opacity: 1.0;
+      transform: translateY(0.35em); }
+  body .icon-container span {
+    color: lightgrey;
+    font-size: 0.8em;
+    position: relative;
+    top: -1.15em;
+    display: table;
+    margin: 0 auto;
+    visibility: hidden;
+    transition: all 0.25s ease-in;
+    opacity: 0; }
   body .form-control {
     border: 1px solid darkgray;
     height: 2.5em;
@@ -160,10 +175,11 @@ body {
       background-color: transparent; }
   body footer.panel-footer {
     background-color: #3D4660;
-    min-height: 5em;
+    min-height: 2.5em;
     text-align: center;
     font-weight: 300;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-size: 0.8em; }
   body #mosy {
     background: #5d2fa3;
     /* Old browsers */
@@ -279,7 +295,13 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -291,7 +313,13 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -303,7 +331,12 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container span {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 1em;
+      font-size: 1em; } }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 /* Portrait and Landscape */
@@ -316,7 +349,13 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -328,7 +367,13 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Landscape */
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -340,7 +385,12 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container span {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 1em;
+      font-size: 1em; } }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Portrait and Landscape */
@@ -353,7 +403,13 @@ body {
       padding-top: 175px;
       padding-bottom: 175px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -365,7 +421,13 @@ body {
       padding-top: 175px;
       padding-bottom: 175px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
@@ -377,7 +439,12 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container span {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 1em;
+      font-size: 1em; } }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 /* Portrait and Landscape */
@@ -390,7 +457,13 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Portrait */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
@@ -402,7 +475,13 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
@@ -414,7 +493,12 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container span {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 1em;
+      font-size: 1em; } }
 
 /* ----------- iPhone X ----------- */
 /* Portrait and Landscape */
@@ -427,7 +511,13 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
@@ -439,7 +529,13 @@ body {
       padding-top: 175px;
       padding-bottom: 175px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container {
+      margin-top: 1em; }
+      body .icon-container span {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1em; } }
 
 /* Landscape */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
@@ -451,4 +547,9 @@ body {
       padding-top: 50px;
       padding-bottom: 50px; }
       body .section button.btn-soft {
-        border: 4px solid white; } }
+        border: 4px solid white; }
+    body .icon-container span {
+      visibility: visible;
+      opacity: 1;
+      margin-top: 1em;
+      font-size: 1em; } }
