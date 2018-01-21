@@ -157,7 +157,7 @@ body {
       opacity: 1.0;
       transform: translateY(0.35em); }
   body .icon-container span {
-    color: lightgrey;
+    color: rgba(143, 143, 143, 0.77);
     font-size: 0.8em;
     position: relative;
     top: -1.15em;
@@ -234,14 +234,18 @@ body {
     background: linear-gradient(45deg, #46037a 1%, #a31077 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46037a', endColorstr='#a31077',GradientType=1 );
-    /* IE6-9 fallback on horizontal gradient */
-    /*
-    background: url(../assets/scene-bkg.jpg) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    */ }
+    /* IE6-9 fallback on horizontal gradient */ }
+  body #wayfinding {
+    background: #ed9e2f;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ed9e2f 0%, #ff8132 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ed9e2f 0%, #ff8132 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ed9e2f 0%, #ff8132 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed9e2f', endColorstr='#ff8132',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
   body #home {
     background: url(../assets/me-home-2.jpg) no-repeat center;
     -webkit-background-size: cover;
