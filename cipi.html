@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pat Conrey Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="section" id="cipi">
+        <div class="row description">
+            <!-- Text Descriptor -->
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h1>Cipi</h1>
+                <p>Are you bad at keeping in touch with people? Me too. I made this app to help
+                    you, and me, and everybody else.</p>
+                <p>Cipi will cycle through your contacts and you can set reminders to text the people that pop up. Hope
+                    you get back in touch with some friends :)</p>
+                <p>Again, I drew on Google's Material for the design and threw in some personal touches.</p>
+                <br>
+                <span class="git-icon"></span><em>Access to the GitHub repo is available upon request.</em>
+            </div>
+            <!-- Image Descriptor -->
+            <div class="col-lg-7 col-md-7 col-sm-12 main-display">
+                <img alt="" src="assets/cipi.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- AOS & jQuery Source -->
+<script src="node_modules/aos/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script>
+
+    var emojis = [0x1F44B, 0x1F91D, 0x1F680, 0x1F450, 0x2615, 0x1F64F, 0x1F91D];
+    var i = 0;
+
+    var footerEmojis = [0x1F49C, 0x2615, 0x1F680, 0x1F95E, 0x1F4BB];
+    var j = 1;
+
+    $(document).ready(function() {
+
+        // Populate github emojis
+        $(".git-icon").text(String.fromCodePoint(0x1F50D) + " ");
+
+        // On hover, make git icon be a smiling face.
+        $(".btn-soft").mouseenter(function() {
+            $(".git-icon").text(String.fromCodePoint(0x1F60A) + " ");
+        });
+        $(".btn-soft").mouseleave(function() {
+            $(".git-icon").text(String.fromCodePoint(0x1F50D) + " ");
+        });
+
+        // Populate footer emojis
+        $("#footer-emoji").text(String.fromCodePoint(0x1F49C));
+        $("#footer-emoji").mouseenter(function() {
+            console.log("yo");
+            $("#footer-emoji").text(String.fromCodePoint(footerEmojis[j % (footerEmojis.length)]));
+            j += 1;
+        });
+
+        // Add initial handshake emoji on document load.
+        $("#welcome-emoji").text(String.fromCodePoint(0x1F91D));
+
+        // Cycle through emojis upon hovering over the "Say Hello" button
+        $("#say-hello-button").mouseenter(function() {
+            $("#welcome-emoji").text(String.fromCodePoint(emojis[i % (emojis.length - 1)]));
+            i += 1;
+        });
+
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                // Using jQuery's animate() method to add smooth page scroll
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+    AOS.init({
+        disable: 'mobile'
+    });
+</script>
+
+</body>
+</html>

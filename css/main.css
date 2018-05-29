@@ -1,19 +1,106 @@
 @import url(../node_modules/bootstrap/dist/css/bootstrap.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:100, 300, 300i, 400, 500, 700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Bangers");
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 20px;
   color: white; }
+  body .row-equal-height .row [class*="col-"] {
+    flex: 1; }
   body a {
     text-decoration: underline;
     color: white;
     font-weight: 400; }
+    body a.primary-contact {
+      font-size: 0.8em;
+      background-color: #34c868;
+      font-weight: 400;
+      padding: 0.8em 1.5em 0.8em 1.5em;
+      border-radius: 0.5em;
+      text-transform: uppercase;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      transition: 0.3s; }
+      body a.primary-contact:focus {
+        background-color: #2aa254;
+        color: white; }
+      body a.primary-contact:hover {
+        background-color: #2aa254;
+        color: white; }
     body a:hover {
       color: #34c868; }
+  body img.cancun-hero {
+    width: 60%;
+    margin: auto; }
+  body .hero, body .time-block {
+    text-align: center;
+    padding-top: 25px; }
   body h1 {
     font-size: 2em;
     font-weight: 400; }
+    body h1.cancun-time {
+      font-family: "Bangers", cursive;
+      font-size: 3em; }
+  body .sidebar {
+    z-index: 999;
+    width: 25px;
+    max-height: 80vh;
+    margin-left: 20px;
+    margin-top: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.19);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.15s ease-out; }
+    body .sidebar .marker {
+      height: 12px;
+      width: 12px;
+      background-color: #ebebeb;
+      border-radius: 8px;
+      margin: auto;
+      position: relative;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      transition: all 0.3s ease-out; }
+      body .sidebar .marker.active {
+        background-color: #34c868; }
+      body .sidebar .marker:hover {
+        background-color: #34c868; }
+        body .sidebar .marker:hover .section-indicator {
+          width: auto;
+          transform: translateX(5px);
+          visibility: visible;
+          opacity: 1; }
+    body .sidebar .section-indicator {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      left: 24px;
+      top: -0.5em;
+      transition: all 0.15s ease-in;
+      background-color: white;
+      padding: 5px 12px;
+      border-radius: 4px;
+      color: rgba(25, 25, 25, 0.77);
+      font-weight: 700;
+      font-size: 14px;
+      -webkit-box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.19);
+      -moz-box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.19);
+      box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.19);
+      margin-right: -300px; }
+    body .sidebar:hover {
+      opacity: 1; }
   body .container-fluid {
     padding-left: 0;
     padding-right: 0; }
@@ -106,6 +193,10 @@ body {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+    body .section video {
+      width: 100%; }
+    body .section .blocks h1, body .section .blocks p {
+      color: rgba(25, 25, 25, 0.77); }
     body .section.about-me {
       background-color: white;
       font-weight: 400;
@@ -116,6 +207,120 @@ body {
         color: rgba(25, 25, 25, 0.77); }
         body .section.about-me a:hover {
           color: #34c868; }
+      body .section.about-me .shoutout {
+        margin-top: 40px; }
+      body .section.about-me .project-preview {
+        padding: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 32px;
+        color: gray;
+        background-color: white;
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.09);
+        -moz-box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.09);
+        box-shadow: 0px 0px 52px 0px rgba(0, 0, 0, 0.09);
+        position: relative;
+        cursor: pointer;
+        transition: all 0.2s ease-out; }
+        body .section.about-me .project-preview .project-see-more {
+          position: absolute;
+          bottom: 1em; }
+          body .section.about-me .project-preview .project-see-more a {
+            color: white;
+            text-decoration: none;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-size: 0.65em;
+            transition: all 0.2s ease-in; }
+        body .section.about-me .project-preview:hover {
+          transform: scale(1.015); }
+          body .section.about-me .project-preview:hover a {
+            letter-spacing: 0.18em; }
+        body .section.about-me .project-preview p {
+          font-size: 0.825em;
+          font-weight: 300;
+          margin-bottom: 2.5em; }
+        body .section.about-me .project-preview h3 {
+          font-weight: 700; }
+        body .section.about-me .project-preview.cipi {
+          background: #04569e;
+          /* Old browsers */
+          background: -moz-linear-gradient(45deg, #04569e 1%, #3d87e2 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(45deg, #04569e 1%, #3d87e2 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(45deg, #04569e 1%, #3d87e2 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#04569e', endColorstr='#3d87e2', GradientType=1);
+          color: white; }
+          body .section.about-me .project-preview.cipi:hover {
+            -webkit-box-shadow: 0px 0px 67px 0px rgba(61, 135, 226, 0.54);
+            -moz-box-shadow: 0px 0px 67px 0px rgba(61, 135, 226, 0.54);
+            box-shadow: 0px 0px 67px 0px rgba(61, 135, 226, 0.54); }
+        body .section.about-me .project-preview.juke {
+          background: #06d1cd;
+          /* Old browsers */
+          background: -moz-linear-gradient(45deg, #06d1cd 1%, #11b28d 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(45deg, #06d1cd 1%, #11b28d 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(45deg, #06d1cd 1%, #11b28d 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#06d1cd', endColorstr='#11b28d', GradientType=1);
+          color: white; }
+          body .section.about-me .project-preview.juke:hover {
+            -webkit-box-shadow: 0px 0px 67px 0px rgba(6, 209, 205, 0.54);
+            -moz-box-shadow: 0px 0px 67px 0px rgba(6, 209, 205, 0.54);
+            box-shadow: 0px 0px 67px 0px rgba(6, 209, 205, 0.54); }
+        body .section.about-me .project-preview.ar {
+          background: #ed9e2f;
+          /* Old browsers */
+          background: -moz-linear-gradient(-45deg, #ed9e2f 0%, #ff8132 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(-45deg, #ed9e2f 0%, #ff8132 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(135deg, #ed9e2f 0%, #ff8132 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed9e2f', endColorstr='#ff8132', GradientType=1);
+          color: white; }
+          body .section.about-me .project-preview.ar:hover {
+            -webkit-box-shadow: 0px 0px 67px 0px rgba(255, 129, 50, 0.54);
+            -moz-box-shadow: 0px 0px 67px 0px rgba(255, 129, 50, 0.54);
+            box-shadow: 0px 0px 67px 0px rgba(255, 129, 50, 0.54); }
+        body .section.about-me .project-preview.image-editor {
+          background: #b73544;
+          /* Old browsers */
+          background: -moz-linear-gradient(top, #b73544 1%, #ed715d 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(top, #b73544 1%, #ed715d 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to bottom, #b73544 1%, #ed715d 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b73544', endColorstr='#ed715d', GradientType=0);
+          color: white; }
+          body .section.about-me .project-preview.image-editor:hover {
+            -webkit-box-shadow: 0px 0px 67px 0px rgba(183, 53, 68, 0.54);
+            -moz-box-shadow: 0px 0px 67px 0px rgba(183, 53, 68, 0.54);
+            box-shadow: 0px 0px 67px 0px rgba(183, 53, 68, 0.54); }
+        body .section.about-me .project-preview img {
+          width: 100%; }
+    body .section.danceblue {
+      min-height: 50vh;
+      font-weight: 300;
+      background-color: #f0f0f0;
+      color: rgba(25, 25, 25, 0.77); }
+      body .section.danceblue h1 {
+        color: #4b4b4b; }
+      body .section.danceblue a {
+        border-color: #34c868;
+        color: #34c868; }
+        body .section.danceblue a:hover {
+          border-color: #34c868;
+          background-color: #34c868;
+          color: white; }
+      body .section.danceblue img:hover {
+        transform: scale(1); }
     body .section.contact {
       min-height: 50vh;
       font-weight: 400;
@@ -123,6 +328,24 @@ body {
       color: #4b4b4b; }
       body .section.contact h1 {
         color: #4b4b4b; }
+      body .section.contact a {
+        color: rgba(25, 25, 25, 0.77); }
+        body .section.contact a:hover {
+          color: #34c868; }
+      body .section.contact p {
+        font-weight: 300; }
+    body .section.section-intro {
+      color: rgba(25, 25, 25, 0.77);
+      height: auto; }
+      body .section.section-intro a {
+        color: rgba(25, 25, 25, 0.77);
+        transition: all 0.25s ease-in; }
+        body .section.section-intro a:hover {
+          color: #34c868; }
+      body .section.section-intro h1 {
+        font-size: 3em; }
+      body .section.section-intro p {
+        font-weight: 400; }
   body em {
     font-style: italic; }
   body .fade-lowlight {
@@ -141,31 +364,36 @@ body {
     transition: 0.3s; }
     body .main-display img:hover {
       transform: scale(1.05); }
-  body .icon-container img {
-    width: 100%;
-    box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    transition: 0.1s all ease-in;
-    text-align: center; }
-    body .icon-container img:hover {
-      box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
-      transform: scale(1.05); }
-    body .icon-container img:hover ~ span {
-      visibility: visible;
-      opacity: 1.0;
-      transform: translateY(0.35em); }
-  body .icon-container span {
-    color: rgba(143, 143, 143, 0.77);
-    font-size: 0.8em;
-    position: relative;
-    top: -1.15em;
-    display: table;
-    margin: 0 auto;
-    visibility: hidden;
-    transition: all 0.25s ease-in;
-    opacity: 0; }
+  body .icon-container {
+    position: relative; }
+    body .icon-container .skill-float {
+      padding-left: 2vw;
+      padding-right: 2vw; }
+    body .icon-container img {
+      width: 100%;
+      box-shadow: 0 0 1.5em rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      transition: 0.1s all ease-in;
+      text-align: center; }
+      body .icon-container img:hover {
+        box-shadow: 0 0 2em rgba(0, 0, 0, 0.2);
+        transform: scale(1.05); }
+      body .icon-container img:hover ~ span {
+        visibility: visible;
+        opacity: 1.0;
+        transform: translateY(0.35em); }
+    body .icon-container span {
+      color: rgba(143, 143, 143, 0.77);
+      font-size: 0.8em;
+      position: relative;
+      top: -1.15em;
+      display: table;
+      margin: 0 auto;
+      visibility: hidden;
+      transition: all 0.25s ease-in;
+      opacity: 0; }
   body .form-control {
     border: 1px solid darkgray;
     height: 2.5em;
@@ -177,9 +405,15 @@ body {
     background-color: #3D4660;
     min-height: 2.5em;
     text-align: center;
-    font-weight: 300;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    font-size: 0.8em; }
+    padding: 1em; }
+    body footer.panel-footer p {
+      margin-bottom: 0;
+      font-size: 0.6em;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 0.18em;
+      color: rgba(255, 255, 255, 0.8); }
   body #mosy {
     background: #5d2fa3;
     /* Old browsers */
@@ -246,8 +480,35 @@ body {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed9e2f', endColorstr='#ff8132',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
+  body #champagneboti {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f4f4f4+0,ffffff+100 */
+    background: #f4f4f4;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #f4f4f4 0%, white 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #f4f4f4 0%, white 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #f4f4f4 0%, white 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#ffffff',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+  body #blocks {
+    background-color: #f2f2f2; }
+  body #constitution {
+    color: white;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1665c0+0,298ae2+100 */
+    background: #1665c0;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #1665c0 0%, #298ae2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1665c0 0%, #298ae2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1665c0 0%, #298ae2 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1665c0', endColorstr='#298ae2',GradientType=0 );
+    /* IE6-9 */ }
   body #home {
-    background: url(../assets/me-home-2.jpg) no-repeat center;
+    background: url(../assets/me.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

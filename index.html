@@ -8,7 +8,6 @@
 </head>
 <body>
 
-
 <div class="container-fluid">
 
     <!-- Home -->
@@ -26,9 +25,7 @@
                     Best, <br/>Pat Conrey.
                 </p>
                 <br>
-                <form method="get">
-                    <button aria-label="Contact" id="say-hello-button" formaction="#contact">Say Hello</button>
-                </form>
+                <a href="#contact" class="primary-contact">Say Hello</a>
             </div>
         </div>
     </div>
@@ -37,72 +34,138 @@
     <div class="section about-me" id="about-me">
         <div class="row description">
             <!-- Text -->
-            <div class="col-lg-7 col-md-7 col-sm-12">
+            <div class="col-lg-12 col-md-12 col-sm-12">
                 <h1>About Me</h1>
-                <p>I'm a student at the University of Kentucky in my fourth year pursuing degrees in Electrical
-                    Engineering and Mathematics. I've been designing for six years and I only recently got into
-                    programming (see <a id="scene-link" href="#scene">below</a> for my first project). Math is my favorite thing,
+                <p>I'm a student at the University of Kentucky, graduating in December of 2018, pursuing dual degrees in Electrical
+                    Engineering and Mathematics. I've been designing for a while and started
+                    programming a few years ago: <a id="scene-link" href="#scene">see my first project</a>. Math is my favorite thing,
                     closely followed by munchkin cats, closely followed by emojis.
                 </p>
-                <p>I mainly focus on iOS development, though I've worked in PHP and the Symfony framework,
-                Node, and front end web languages like HTML, SCSS, and JavaScript. I hardly know anything about Android
-                development but I'm in the process of learning React Native -- wish me luck!
-                </p>
-                <p> Below, you'll find some projects I'm proud of. I designed all the interfaces from scratch and then
-                    built the applications using Swift 3 and 4. If you want to check out the code for any of the projects,
-                    let me know and I can give you access to the GitHub repos.
+            </div>
+        </div>
+
+        <div class="row shoutout" id="good-at">
+            <div class="col-xs-12">
+                <h1>
+                    Some things I'm good at
+                </h1>
+                <p>
+                    Since I've gotten into programming, I can't stop learning new things. This collection might seem
+                    sort of random, it is! I can use all of these tools pretty well, but there's always more to learn. Currently,
+                    I'm focusing on PHP and the Symfony Framework.
                 </p>
             </div>
-            <!-- Icon Descriptors -->
-            <div class="col-lg-5 col-md-5 col-sm-12 icon-container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="adobe illustrator" src="assets/icons/ai.png"/>
-                        <span class="">Illustrator</span>
+        </div>
+        <div class="row icon-container">
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="adobe illustrator" src="assets/icons/ai.png"/>
+                <span class="">Illustrator</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="photoshop" src="assets/icons/ps.png"/>
+                <span class="">Photoshop</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="j query" src="assets/icons/sketch.png"/>
+                <span class="">Sketch</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="css 3" src="assets/icons/css.png"/>
+                <span class="">CSS3</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="bootstrap css" src="assets/icons/bootstrap.png"/>
+                <span class="">Bootstrap</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="html 5" src="assets/icons/html.png"/>
+                <span class="">HTML5</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="javascript" src="assets/icons/js.png"/>
+                <span class="">JavaScript</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="node js" src="assets/icons/node.png"/>
+                <span class="">Node JS</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="php" src="assets/icons/php.png"/>
+                <span class="">PHP</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="swift" src="assets/icons/symfony.png"/>
+                <span class="">Symfony</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="swift" src="assets/icons/swift.png"/>
+                <span class="">Swift</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="firebase" src="assets/icons/firebase.png"/>
+                <span class="">Firebase</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="swift" src="assets/icons/matlab-sm.png"/>
+                <span class="">Matlab</span>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 skill-float">
+                <img alt="swift" src="assets/icons/python.png"/>
+                <span class="">Python</span>
+            </div>
+        </div>
+
+        <!-- iOS Development -->
+        <div class="row description" id="ios-dev">
+            <div class="col-lg-12 col-mg-12 col-sm-12">
+                <h1>
+                    iOS Development
+                </h1>
+                <p>
+                    If I'm programming, I'm probably working in Swift. To me, apps seem so tactile: they can really become
+                    part of somebody's life. In the next few posts, you'll see my experiments with iOS. I've listed some projects
+                    I liked working on, and they have their own pages. Check them out too!
+                </p>
+            </div>
+        </div>
+        <div class="row-equal-height row" id="ios-projects">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="project-preview image-editor">
+                    <img src="assets/thumbnails/image-editor-thumbnail.png"/>
+                    <h3>Image Editing</h3>
+                    <p class="preview-description">When you can't decide what filter to use on your insta, let a machine pick for you! I've heard they're pretty smart nowadays.</p>
+                    <div class="project-see-more">
+                        <a href="image-editing.html">Learn More</a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="bootstrap css" src="assets/icons/bootstrap.png"/>
-                        <span class="">Bootstrap</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="project-preview ar">
+                    <img src="assets/thumbnails/ar-thumbnail.png"/>
+                    <h3>AR Wayfinding</h3>
+                    <p>If you need directions, but you want them in a really convoluted way, you've come to the right place.</p>
+                    <div class="project-see-more">
+                        <a href="ar-wayfinding.html">Learn More</a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="css 3" src="assets/icons/css.png"/>
-                        <span class="">CSS3</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="project-preview juke">
+                    <img src="assets/thumbnails/music-thumbnail.png"/>
+                    <h3>Juke</h3>
+                    <p>In case your soul clings to the nostalgia of ancient things like CD's, I've got the perfect app for you!</p>
+                    <div class="project-see-more">
+                        <a href="juke.html">Learn More</a>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="firebase" src="assets/icons/firebase.png"/>
-                        <span class="">Firebase</span>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="html 5" src="assets/icons/html.png"/>
-                        <span class="">HTML5</span>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="j query" src="assets/icons/sketch.png"/>
-                        <span class="">Sketch</span>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="javascript" src="assets/icons/js.png"/>
-                        <span class="">JavaScript</span>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="node js" src="assets/icons/node.png"/>
-                        <span class="">Node JS</span>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="php" src="assets/icons/php.png"/>
-                        <span class="">PHP</span>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="photoshop" src="assets/icons/ps.png"/>
-                        <span class="">Photoshop</span>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="swift" src="assets/icons/swift.png"/>
-                        <span class="">Swift</span>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-sm-3 col-xs-3">
-                        <img alt="swift" src="assets/icons/symfony.png"/>
-                        <span class="">Symfony</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="project-preview cipi">
+                    <img src="assets/thumbnails/cipi-thumbnail.png"/>
+                    <h3>Cipi</h3>
+                    <p>For when you haven't talked to old friends in a while. You're not a sh**ty person, you just need Cipi.</p>
+                    <div class="project-see-more">
+                        <a href="cipi.html">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -114,7 +177,7 @@
         <div class="row description">
             <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img alt="" data-aos="zoom-out" src="assets/mosy-overview-sm.png"/>
+                <img class="lazy" src="assets/placeholders/mosy_overview_plc.png" data-src="assets/mosy_overview.png" data-srcset="assets/mosy_overview.png 1x" alt="An overview of the Mosy application, showing login, gallery, and password protection.">
             </div>
             <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
@@ -132,22 +195,20 @@
                     chat application? <a href="https://firebase.google.com/" target="_blank">Firebase</a> was a huge
                     help, and <a href="https://onesignal.com/" target="_blank">OneSignal</a> beautifully handled push
                     notifications. The design was largely inspired by purple, my favorite color, and Google's Material standard.
-                    This was the next big project I worked on after my first app, Scene (see <a href="#scene">below</a>).
+                    This was the next big project I worked on after my first app, <a href="#scene">Scene</a>.
                 I wanted to focus on the user. At the time, that meant pretty animations and a good color scheme. With research,
                 I came to learn about accessibility and developing for all users regardless of their culture, capabilities,
                 or background. I learned a ton and refine those lessons every day.</p>
             </div>
             <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img alt="" src="assets/mosy-ipad-sm.png"/>
+                <img class="lazy" src="assets/placeholders/mosy_ipad_plc.png" data-src="assets/mosy_ipad.png" data-srcset="assets/mosy_ipad.png 1x" alt="The gallery feature on Mosy, displayed on an iPad.">
             </div>
         </div>
         <div class="row description">
             <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img data-aos="fade-right"
-                     data-aos-offset="300"
-                     data-aos-easing="ease-in-sine" alt="" src="assets/mosy-sm.png"/>
+                <img class="lazy" src="assets/placeholders/mosy_plc.png" data-src="assets/mosy.png" data-srcset="assets/mosy.png 1x" alt="The homescreen of the app showing all the conversations for a user, displayed on an iPhone.">
             </div>
             <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
@@ -164,71 +225,30 @@
         </div>
     </div>
 
-    <!-- Image Editor -->
-    <div class="section" id="image-editor">
-        <div class="row description">
-            <!-- Text Descriptor -->
-            <div class="col-lg-5 col-md-5 col-sm-12">
-                <h1>Image Editor</h1>
-                <p>This app really shows my creativity with naming projects...</p>
-                <p>Still a work in progress, this filter-adding application intelligently suggests custom filters
-                based on the image they'd like to edit. For example, an image with people should have different
-                filters than an image of the Grand Canyon.</p>
-                <p>By developing this, I learned about the Core Image SDK to create filters and the new Vision API with CoreML to recognize faces and objects.</p>
-                <br>
-                <span class="git-icon"></span><em>Access to the GitHub repo is available upon request.</em>
-                <br>
-                <br>
-                <a href="#contact" class="btn-link btn-soft">Contact</a>
-            </div>
+    <!-- blocks -->
+    <div class="section" id="blocks">
+        <div class="row description blocks">
             <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img alt="" data-aos="zoom-out" src="assets/image-editor-sm.png"/>
+                <video controls preload="none" poster="assets/blocks_plc.png">
+                    <source src="assets/blocks.mp4" type="video/mp4">
+                </video>
             </div>
-        </div>
-    </div>
-
-    <!-- Music Player -->
-    <div class="section" id="music">
-        <div class="row description">
-            <!-- Image Descriptor -->
-            <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img alt="" data-aos="fade-up" src="assets/music-sm.png"/>
-            </div>
-            <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
-                <h1>Juke</h1>
-                <p>Juke was a fun, small project I made for a friend: she didn't listen to music too much since she liked
-                CDs and was rarely in her car. I got the idea for a music player interface that prominently displays
-                    a spinning CD of the album art for the current song.</p>
-                <p>This app isn't connected to the internet or a streaming service. It would just come with a preloaded playlist of songs.
-                The code isn't hosted on my GitHub, but if you're interested please feel free to reach out!</p>
-                <p>The songs in the mockup are The Revivalists' "Soul Fight" and Travis Scott's "coordinate,"
-                gratefully used here without the intent of copyright infringement.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Cipi -->
-    <div class="section" id="cipi">
-        <div class="row description">
-            <!-- Text Descriptor -->
-            <div class="col-lg-5 col-md-5 col-sm-12">
-                <h1>Cipi</h1>
-                <p>Are you bad at keeping in touch with people? Me too. I made this app to help
-                you, and me, and everybody else.</p>
-                <p>Cipi will cycle through your contacts and you can set reminders to text the people that pop up. Hope
-                you get back in touch with some friends :)</p>
-                <p>Again, I drew on Google's Material for the design and threw in some personal touches.</p>
-                <br>
-                <span class="git-icon"></span><em>Access to the GitHub repo is available upon request.</em>
-                <br>
-                <br>
-                <a href="#contact" class="btn-link btn-soft">Contact</a>
-            </div>
-            <!-- Image Descriptor -->
-            <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img alt="" src="assets/cipi-sm.png"/>
+                <h1>Blocks</h1>
+                <p>
+                    This app takes building blocks to the AR stage. You can select different materials and build whatever
+                    structure you can imagine right in your living room. You can save structures, which triggers the app
+                    to construct a custom XML file describing your structure, saving it locally and uploading it to a sever. Ultimately, I want to be able to share structures
+                    between users, create fun textures with special properties, and collaboratively build in realtime with a friend.
+                </p>
+                <p>
+                    I'm curious about the role AR will play in tech over the next couple years. I'm particularly excited about
+                    its potential in the context of education. I'd love to chat about this, please drop me a line!
+                </p>
+                <p>
+                    Credit for this structure goes to my girlfriend, an electrical engineer pursuing a Masters degree at UC Berkeley.
+                </p>
             </div>
         </div>
     </div>
@@ -238,7 +258,7 @@
         <div class="row description">
             <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img alt="" src="assets/scene-2-sm.png"/>
+                <img class="lazy" src="assets/placeholders/scene_2_plc.png" data-src="assets/scene_2.png" data-srcset="assets/scene_2.png 1x" alt="A collection of screens from Scene: a user's profile view, a detail view of an event listing, and a push notification on a user's device.">
             </div>
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <h1>Scene</h1>
@@ -256,7 +276,7 @@
             <div class="col-lg-5 col-md-5 col-sm-12">
                 <p>My friend came up with the idea in our sophomore year of college. I designed all of the interfaces over
                     the next few months and we began scouting for a mobile developer. None of them worked out, so I
-                    reluctantly decided to program it myself. Before I started learning the language, I sent screenshots of the
+                    decided to program it myself. Before I started learning the language, I sent screenshots of the
                     UI to my friend in Silicon Valley -- the only developer I knew. His advice was simple: "That's
                     ambitious. But doable, definitely doable!" Enduring
                     innumerable crashes, failed features, bad designs, tons of revisions, and full course loads for two
@@ -267,48 +287,112 @@
             </div>
             <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img alt="" src="assets/scene-sm.png"/>
+                <img class="lazy" src="assets/placeholders/scene_plc.png" data-src="assets/scene.png" data-srcset="assets/scene.png 1x" alt="A collection of screens from Scene: the login page, the event feed, and a user commenting on an event. Each is displayed on an iPhone.">
             </div>
         </div>
     </div>
 
-    <!-- Resume -->
-    <div class="section" id="resume">
+    <!-- Web Development -->
+    <div class="section section-intro" id="web-dev">
+        <div class="row description">
+            <div class="col-lg-12 col-mg-12 col-sm-12">
+                <h1>
+                    Web Development
+                </h1>
+                <p>
+                    I've gotten into web development and have really come to enjoy building websites. I started with Firebase
+                    backends and have turned recently to PHP and the Symfony framework. I've turned what I've learned into
+                    tools that make managing student organizations easier.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ChampagneBOTi -->
+    <div class="section contact" id="champagneboti">
         <div class="row description">
             <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img alt="" src="assets/resume-sm.png"/>
+                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">so I made a groupme bot that would respond to whatever my friend posted with a drake quote - here are some of the key takeaways 😂😂😂 <a href="https://t.co/qaGRlER3va">pic.twitter.com/qaGRlER3va</a></p>&mdash; pat 🌎 (@PatConrey) <a href="https://twitter.com/PatConrey/status/965293789207285760?ref_src=twsrc%5Etfw">February 18, 2018</a></blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
             <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
-                <h1>This Site</h1>
-                <p>This site uses an elementary mix of SCSS for styling, Node for serving, semantic and accessible HTML,
-                    jQuery because #jQuery, and Bootstrap for its grid. Although I'm not too familiar with web development, I'm very
-                    happy with the way this site turned out. I hope you like it too! If you have any feedback at all,
-                    I'd love to hear from you. Please reach out!</p>
+                <h1>ChampagneBOTi</h1>
+                <p>I've got a friend who loves Drake. Who doesn't? But my friend <em>really</em> loves Drake. So I thought I'd have some fun.</p>
+                <p>We're in a few GroupMe channels together, so I built a GroupMe bot that would post a random Drake quote
+                    whenever my friend put anything in the channel. The server was written in Python and quickly spun up on Heroku.</p>
+                <p>My friend wanted to fight this bot. He left the channel more than a few times. He had no idea who made it
+                    or how to remove the bot from the channel.</p>
+                <p>Ultimately, I told him I built the bot and turned it off. Who says programming can't be fun?</p>
                 <br>
-                <a href="#contact" class="btn-link btn-soft">Contact</a>
             </div>
         </div>
     </div>
 
-    <!-- Wayfinding -->
-    <div class="section" id="wayfinding">
+    <!-- DB_CMS -->
+    <div class="section danceblue" id="danceblue">
+        <div class="row description">
+            <!-- Image Descriptor -->
+            <div class="col-lg-7 col-md-7 col-sm-12 main-display">
+                <img class="lazy" src="assets/placeholders/db_cms_2_plc.png" data-src="assets/db_cms_2.png" data-srcset="assets/db_cms_2.png 1x" alt="The all-posts section of the dashboard for the DanceBlue Client CMS.">
+            </div>
+            <!-- Text Descriptor -->
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h1>DanceBlue Content Management</h1>
+                <p>DanceBlue is a 24-hour no-sitting, no-sleeping dance marathon that donates its proceeds to The Golden Matrix
+                Fund to benefit kids with pediatric cancer and to further fund research. I've recently (May 2018) become the coordinator
+                for the mobile application.</p>
+                <p>The app pulls its data from Firebase. Before I got the position, other coordinators were having to go into
+                the Firebase console and manually enter blog posts. I built a website that enables coordinators to update
+                blog posts through a UI, allowing them to attach images and see a preview of what it would look like on a mobile device.</p>
+            </div>
+        </div>
         <div class="row description">
             <!-- Text Descriptor -->
             <div class="col-lg-5 col-md-5 col-sm-12">
-                <h1>AR Wayfinding</h1>
-                <p>This is a project I built for my employer, <a href="http://gamifi.co/" target="_blank">Gamifi</a>.</p>
-                <p>Gamification encompasses a broad range of technologies. One particularly compelling technology on the
-                horizon is augmented reality, AR. We wanted to create a way that a client could define landmarks on a
-                map and we can show users those landmarks in the real world.</p>
-                <p>Since Gamifi has a number of clients that want to implement this feature, I built it as
-                a modular framework with intuitive data source and delegate protocols so we can easily implement the
-                framework in the future.</p>
+                <p>The website also allows coordinators to see a list of the current posts, saving them time from digging through
+                    the JSON tree in the Firebase console. This system has proven effective and instills confidence in the
+                    coordinators, who would frequently worry that they would mess up one of the JSON keys.
+                </p>
+                <p>
+                    I've got a demo of the site up and running. It doesn't post any of the data you enter. I've found that
+                    it's really fun to play with the mobile device preview. Play around with it and send your feedback my way!
+                </p>
+                <br>
+                <a href="https://danceblue-demo.firebaseapp.com/" class="btn-link btn-soft btn-light-content" target="_blank">Demo</a>
             </div>
             <!-- Image Descriptor -->
             <div class="col-lg-7 col-md-7 col-sm-12 main-display">
-                <img alt="" src="assets/ar-sm.png"/>
+                <img class="lazy" src="assets/placeholders/db_cms_1_plc.png" data-src="assets/db_cms_1.png" data-srcset="assets/db_cms_1.png 1x" alt="The new-posts section of the dashboard for the DanceBlue Client CMS.">
+            </div>
+        </div>
+    </div>
+
+    <!-- CONSTITUTION -->
+    <div class="section" id="constitution">
+        <div class="row description">
+            <!-- Image Descriptor -->
+            <div class="col-lg-7 col-md-7 col-sm-12 main-display">
+                <img class="lazy" src="assets/placeholders/sga_constitution_plc.png" data-src="assets/sga_constitution.png" data-srcset="assets/sga_constitution.png 1x" alt="A display of Article 1 of the UKSGA Constitution on the Constitution Project Site.">
+            </div>
+            <!-- Text Descriptor -->
+            <div class="col-lg-5 col-md-5 col-sm-12">
+                <h1>SGA Constitution</h1>
+                <p>I love UK's Student Government Association. I've been a senator and now I'm on the executive board
+                as Director of Technology. I sincerely believe that SGA can benefit students' lives and ensure that their
+                experiences are as equitable as possible. It starts with our bylaws.</p>
+                <p>
+                    UKSGA has had a pretty awful record at disseminating the most updated version of its constitution, and, when we
+                    do, it's a Word document. It's not accessible and it's not readily available. As soon as I was appointed, I built
+                    a site to house our Constitution. There's an administrative backend that enables the Operations & Evaluations committee
+                    chair to update any Article, Section, Subsection, Clause, or Subclause.
+                </p>
+                <p>
+                    The experience was built with the Symfony framework, and while designing, I paid particular attention to its
+                    accessibility so any student, regardless of their background, can easiliy navigate the site and understand SGA's
+                    purpose.
+                </p>
             </div>
         </div>
     </div>
@@ -318,16 +402,19 @@
         <div class="row description">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <h1>Contact Me</h1>
-                <p>If you'd like to get in touch, feel free to email me at patrickconrey@gmail.com. Alternatively, you can reach me
+                <p>If you'd like to get in touch, feel free to email me at <a href="mailto:someone@patrickconrey@gmail.com?Subject=Hi!" target="_top" class="email">patrickconrey@gmail.com</a>. Alternatively, you can reach me
                     on twitter at @PatConrey. If you live in the wizarding world, your owl already knows how to find me 🦉. I'm
                     looking forward to your email, tweet, or parchment.</p>
+                <a class="twitter-follow-button"
+                   href="https://twitter.com/PatConrey">
+                    Follow @PatConrey</a>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="panel-footer description">
-        <p id="footer-text">Made by @PatConrey with<span id="footer-emoji" style="font-size: 1.3em; margin: 0.3em;">❤️</span>in 2018.</p>
+        <p>This site was made by @PatConrey and updated in May of 2018.</p>
     </footer>
 
 </div>
@@ -335,15 +422,68 @@
 <!-- AOS & jQuery Source -->
 <script src="node_modules/aos/dist/aos.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/matchHeight.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.appear@1.0.1/jquery.appear.min.js" type="text/javascript"></script>
+
 <script>
 
     var emojis = [0x1F44B, 0x1F91D, 0x1F680, 0x1F450, 0x2615, 0x1F64F, 0x1F91D];
     var i = 0;
 
-    var footerEmojis = [0x1F49C, 0x2615, 0x1F680, 0x1F95E, 0x1F4BB];
-    var j = 1;
+    var activeSection;
+
+    //var footerEmojis = [0x1F49C, 0x2615, 0x1F680, 0x1F95E, 0x1F4BB];
+    //var j = 1;
+
+    //
+    // LAZY LOADING
+    //
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+        console.log("DOM content loaded");
+
+        if ("IntersectionObserver" in window) {
+
+            console.log("Intersection observer available");
+
+            let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+
+                console.log("constructing intersection observer");
+
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+
+                        console.log("entry is Intersecting");
+                        let lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.srcset = lazyImage.dataset.srcset;
+                        lazyImage.classList.remove("lazy");
+                        lazyImageObserver.unobserve(lazyImage);
+                    }
+                });
+            });
+
+            lazyImages.forEach(function(lazyImage) {
+                lazyImageObserver.observe(lazyImage);
+            });
+        } else {
+            // Possibly fall back to a more compatible method here
+        }
+    });
 
     $(document).ready(function() {
+
+        var sectionAbout = $("#about-me");
+        const sectionMosy = $("#mosy");
+        const sectionScene = $("#scene");
+        const sectionWeb = $("#web-dev");
+        const sectionBot = $("#champagneboti");
+        const sectionDanceblue = $("#danceblue");
+        const sectionSGA = $("#constitution");
+
+
+        $(".project-preview").matchHeight();
 
         // Populate github emojis
         $(".git-icon").text(String.fromCodePoint(0x1F50D) + " ");
@@ -356,14 +496,6 @@
             $(".git-icon").text(String.fromCodePoint(0x1F50D) + " ");
         });
 
-        // Populate footer emojis
-        $("#footer-emoji").text(String.fromCodePoint(0x1F49C));
-        $("#footer-emoji").mouseenter(function() {
-            console.log("yo");
-            $("#footer-emoji").text(String.fromCodePoint(footerEmojis[j % (footerEmojis.length)]));
-            j += 1;
-        });
-
         // Add initial handshake emoji on document load.
         $("#welcome-emoji").text(String.fromCodePoint(0x1F91D));
 
@@ -374,32 +506,27 @@
         });
 
         $("a").on('click', function(event) {
-
-            // Make sure this.hash has a value before overriding default behavior
             if (this.hash !== "") {
-                // Prevent default anchor click behavior
                 event.preventDefault();
-
-                // Store hash
                 var hash = this.hash;
-
                 // Using jQuery's animate() method to add smooth page scroll
-                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
                 }, 800, function(){
-
-                    // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
                 });
-            } // End if
+            }
         });
-
     });
-
     AOS.init({
         disable: 'mobile'
     });
+
+    function illuminateActiveSection() {
+        if (activeSection) {
+            activeSection.addClass('active');
+        }
+    };
 
 </script>
 

@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Welcome{% endblock %}
+
+{% block body %}
+<div class="landing-container">
+    <h1>Thanks for stopping by!</h1>
+    <hr>
+    <p>Just fill out the info below and you'll be good to go.</p>
+    <br>
+    <div class="video-box">
+        <video autoplay></video>
+        <canvas style="display:none;"></canvas>
+        <img id="photo" class="img-preview" alt="The screen capture will appear in this box.">
+        <button id="image_capture" class="btn btn-primary btn-accent-2 centered"><i class="material-icons md-18 md-dark">photo_camera</i>Capture</button>
+    </div>
+    <h5><i class="material-icons md-18 md-dark warning">warning</i> Don't forget to include the "9" in front of your id number.</h5>
+    {% form_theme form 'bootstrap_4_layout.html.twig' %}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+    <br>
+    <hr>
+    <br>
+    <a href="/rushee/"><i class="material-icons">arrow_back</i> Uh oh, go back.</a>
+</div>
+
+{% endblock body %}
+
+{% block javascripts %}
+<script>
+    var width = 1080;    // We will scale the photo width to this
+    var height = 0;     // This will be computed based on the input stream
+    var streaming = false;
+    var video = document.querySelector('video');
+    var canvas = document.querySelector('canvas');
+    var imageCapture = document.getElementById('image_capture');
+    var photo = document.getElementById('photo');
+    var localMediaStream = null;
+    navigator.mediaDevices.getUserMedia({video: true, audio: false}).then(function(stream) {
+        video.srcObject = stream;
+        video.play();
+    }).catch(function(err) {
+        console.log("An error occured! " + err);
+    });
+    video.addEventListener('canplay', function(ev){
+        if (!streaming) {
+            height = video.videoHeight / (video.videoWidth/width);
+            video.setAttribute('width', width);
+            //video.setAttribute('height', height);
+            canvas.setAttribute('width', width);
+            //canvas.setAttribute('height', height);
+            photo.setAttribute('style', 'height: height; width: width');
+            streaming = true;
+        }
+    }, false);
+    imageCapture.addEventListener('click', function(ev){
+        takepicture();
+        ev.preventDefault();
+    }, false);
+    function takepicture() {
+        var context = canvas.getContext('2d');
+        canvas.width = width;
+        canvas.height = height;
+        context.drawImage(video, 0, 0, width, height);
+        var data = canvas.toDataURL('image/png');
+        console.log("DATA: ", data);
+        photo.setAttribute('src', data);
+        photo.setAttribute('style', 'visibility: visible;');
+        document.getElementById("appbundle_rusheedetails_imageData").value = data;
+    }
+    function clearphoto() {
+        var context = canvas.getContext('2d');
+        context.fillStyle = "#AAA";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        var data = canvas.toDataURL('image/png');
+        photo.setAttribute('src', data);
+    }
+    var submitButton = document.getElementById('appbundle_rusheedetails_submit');
+    submitButton.addEventListener('click', function() {
+        console.log('THE FUNCTION WAS CALLED');
+        var storageRef = firebase.storage().ref();
+        var studentID = document.getElementById('appbundle_rusheedetails_studentId_second').value;
+        var imageRef = storageRef.child("img-" + studentID + '.jpg');
+        var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+        imageRef.put(image).then(function(snapshot) {
+            console.log('success');
+        }).catch(function(err) {
+            console.log("An error occured! " + err);
+        });
+    });
+</script>
+{% endblock %}
